@@ -15,6 +15,8 @@ RUN curl -o $workdir/apache-opennlp-1.8.2-bin.zip http://apache.claz.org/opennlp
 
 RUN mkdir /models
 RUN curl -o /models/en-sent.bin http://opennlp.sourceforge.net/models-1.5/en-sent.bin
+RUN curl -o /models/en-ner-person.bin http://opennlp.sourceforge.net/models-1.5/en-ner-person.bin
+RUN curl -o /models/en-ner-organization.bin http://opennlp.sourceforge.net/models-1.5/en-ner-organization.bin
 
 ADD KEYS $workdir/KEYS
 ADD apache-opennlp-1.8.2-bin.zip.asc $workdir/apache-opennlp-1.8.2-bin.zip.asc
