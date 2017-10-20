@@ -51,6 +51,12 @@ If you'd like to get the split sentences in a separate file, redirect the output
 docker run --rm -i -v $PWD:/usr/src/myapp opennlp-docker SentenceDetector /models/en-sent.bin < input.txt > output.txt
 ```
 
-Currently, only the `en-sent.bin` model is included in the image. To use any other model, you'll need to [download](http://opennlp.sourceforge.net/models-1.5/) it / load it in yourself.
+The following models are included in the image (in the `/models` directory):
+
+- en-sent.bin
+- en-ner-person.bin
+- en-ner-organization.bin
+
+To use any other model, you'll need to either [download](http://opennlp.sourceforge.net/models-1.5/) it or train it and load it in yourself.
 
 To better understand OpenNLP, see their [documentation](https://opennlp.apache.org/docs/1.8.2/manual/opennlp.html).
