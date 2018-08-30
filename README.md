@@ -7,7 +7,7 @@ A Docker image for [OpenNLP](https://opennlp.apache.org/).
 ### Build
 
 ```sh
-docker-build -t opennlp-docker .
+docker build -t opennlp-docker .
 ```
 
 ### Run
@@ -59,4 +59,4 @@ The following models are included in the image (in the `/models` directory):
 
 To use any other model, you'll need to either [download](http://opennlp.sourceforge.net/models-1.5/) it or train it and load it in yourself.
 
-To better understand OpenNLP, see their [documentation](https://opennlp.apache.org/docs/1.8.2/manual/opennlp.html).
+To better understand OpenNLP, see their [documentation](https://opennlp.apache.org/docs/1.9.0/manual/opennlp.html).
